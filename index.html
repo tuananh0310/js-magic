@@ -1,40 +1,974 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
 
-		<title>reveal.js</title>
+    <title>reveal.js – The HTML Presentation Framework</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <meta
+      name="description"
+      content="A framework for easily creating beautiful presentations using HTML"
+    />
+    <meta name="author" content="Hakim El Hattab" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/league.css" id="theme" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <!-- <a>
+            <img
+              src="/examples/assets/318360126_3482738941956988_8631165574201513824_n.jpg"
+              alt="reveal.js logo"
+              style="margin: 0 auto 4rem auto; background: transparent"
+              class="demo-logo"
+            />
+          </a> -->
+          <h4>Dive Deep into the JavaScript Most Advanced Concepts</h4>
+          <iframe src="https://giphy.com/embed/SvFocn0wNMx0iv2rYz" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/code-developer-javascript-SvFocn0wNMx0iv2rYz"></a></p>
+          <!-- <p>
+            <small
+              >Created by
+              <a href="https://www.facebook.com/tuananhzzzzzz/">AnhLxt</a> and
+              <a href="google.com.vn">google.com</a></small
+            >
+          </p> -->
+        </section>
+        <section data-background-video="https://external-preview.redd.it/023AXM3Ql4ljGw6-b1EZC4ogv7vPPwSsNQvdrtTa9IU.gif?format=mp4&v=enabled&s=0b8b848884e3c3edaa9808589125842f1f987d02">
+        </section>
+        <section>
+          <section>
+            <iframe src="https://giphy.com/embed/9E7kUhnT9eDok" width="480" height="284" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/loop-darkness-awakens-9E7kUhnT9eDok"></a></p>
+          </section>
+          <section>
+            <h2>Event Loop In JavaScript</h2>
+            <p>
+              The event loop is a programming construct or design pattern that
+              waits for and dispatches events or messages in a program. It
+              functions as an infinite loop that waits for an event to occur.
+            </p>
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--44yasyNX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gid1.6.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--d_n4m4HH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif2.1.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--MewGMdte--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif3.1.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--b2BtLfdz--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif4.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--NYOknEYi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif5.gif" alt="">
+          </section>
+        </section>
+        <section>
+          <section data-auto-animate>
+            <h2 data-id="code-title">what gets logged to the console</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+      const foo = () => console.log("First");
+      const bar = () => setTimeout(() => console.log("Second"), 500);
+      const baz = () => console.log("Third");
+
+      bar();
+      foo();
+      baz();
+            </code></pre>
+            <!-- <p>
+              Code syntax highlighting courtesy of
+              <a href="https://highlightjs.org/usage/">highlight.js</a>.
+            </p> -->
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--BLtCLQcd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif14.1.gif" alt="">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Hoisting</h2>
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--lLfiCbTX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif7.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--vRtKMspn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif8.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--zvlaEaAo--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif9.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--nk1taOke--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif16.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--2nai6XPr--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif17.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--VVPlWhGC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif18.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--LGEaCMkS--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif12.gif" alt="">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Callback?</h2>
+            <blockquote
+              cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"
+            >
+              &ldquo; a callback function is a piece of executable code that is
+              passed as an argument to another piece of code. The purpose of the
+              callback function is to be executed by the code that receives it,
+              either immediately in a synchronous callback or at a later point
+              in time in an asynchronous callback.&rdquo;
+              <p style="text-align: center">&ldquo;wikipedia&rdquo;</p>
+            </blockquote>
+          </section>
+          <section>
+            <iframe src="https://giphy.com/embed/l0O9xhygcEBnA3pcI" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/minority-report-minority-report-l0O9xhygcEBnA3pcI"></a></p>
+          </section>
+          <section>
+            <h3>Callback or callback function</h3>
+            <ul>
+              <li class="fragment">Passed as an argument to another piece of code</li>
+              <li class="fragment">
+                The code that receives the callback is expected to call back
+                (execute) the callback function
+              </li>
+              <li class="fragment">This execution may be immediate (synchronous callback)</li>
+              <li class="fragment">
+                It might happen at a later point in time (asynchronous callback)
+              </li>
+            </ul>
+          </section>
+          <section>
+            <a>
+              <img
+                src="/examples/assets/Screenshot 2023-03-19 at 00.13.57.png"
+                alt="reveal.js logo"
+                style="margin: 0 auto 4rem auto"
+                class="demo-logo"
+              />
+            </a>
+			<p>A callback is often back on the level of the original caller.</p>
+          </section>
+          <section>
+            <iframe
+              src="https://giphy.com/embed/McPHZWaKkFImC6ODE5"
+              width="480"
+              height="270"
+              frameborder="0"
+              class="giphy-embed"
+              allowfullscreen
+            ></iframe>
+            <p>
+              <a
+                href="https://giphy.com/gifs/matt-mcdm-colville-McPHZWaKkFImC6ODE5"
+              ></a>
+            </p>
+          </section>
+        </section>
+        <section data-auto-animate>
+          <section>
+            <h6 data-id="code-title">synchronous callback</h6>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers="1-16|13|1-3|5-7|12|16|1-3|9-11|15"><script type="text/template">
+						function calculate(num1, num2, callbackFunction) {
+							return callbackFunction(num1, num2);
+						}
+						
+						function calcProduct(num1, num2) {
+							return num1 * num2;
+						}
+						
+						function calcSum(num1, num2) {
+							return num1 + num2;
+						}
+						// alerts 75, the product of 5 and 15
+						alert(calculate(5, 15, calcProduct)); 
+
+						// alerts 20, the sum of 5 and 15
+						alert(calculate(5, 15, calcSum)); 
+					</script></code></pre>
+          </section>
+          <section>
+			Note, however, that callbacks are often used to continue code execution after an asynchronous operation has completed — these are called asynchronous callbacks. A good example is the callback functions executed inside a .then() block chained onto the end of a promise after that promise fulfills or rejects. This structure is used in many modern web APIs, such as fetch().
+	</section>
+      <section>
+        <iframe src="https://giphy.com/embed/kaq6GnxDlJaBq" width="434" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/chloe-concerned-kaq6GnxDlJaBq"></a></p>
+      </section>
+	<section>
+			<h6 data-id="code-title">asynchronous callback</h6>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" ><script type="text/template">
+    function fetchData(callback) {
+      // set the API endpoint URL to a variable
+      const apiUrl = 'https://jsonplaceholder.typicode.com/todos/1';
+      // fetch data using the API endpoint URL
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          // call the callback function with the parsed data
+          callback(data);
+        })
+        .catch(error => {
+          // handle any errors that occur during the fetch process
+          console.error('Error fetching data:', error);
+        });
+    }
+    // define a separate function to handle the retrieved data
+    function handleData(data) {
+      console.log('Received data:', data);
+    }
+    
+    // call the fetchData function, passing the handleData function as a callback
+    fetchData(handleData);
+					</script></code></pre>
+		</section>
+          <section>
+            <a href="">
+              <iframe
+                src="https://giphy.com/embed/mc05gQvurTDEjW34TL"
+                width="480"
+                height="480"
+                frameborder="0"
+                class="giphy-embed"
+                allowfullscreen
+              ></iframe>
+              <p>
+                <a
+                  href="https://giphy.com/gifs/thenextstep-the-next-step-tns-tns8-mc05gQvurTDEjW34TL"
+                ></a>
+              </p>
+            </a>
+          </section>
+        </section>
+        <section>
+          <section>
+            <iframe src="https://giphy.com/embed/dlER8f7VJPJUGrjnHC" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dierksbentley-umg-dierks-bentley-umgn-dlER8f7VJPJUGrjnHC"></a></p>
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--c0aEZX7m--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/b8euo2n7twvgh3dbuatd.jpeg" alt="">
+          </section>
+          <section id="fragments">
+            <h2>How do I fix callback hell?</h2>
+            <p> Here are some ways to address this issue...</p>
+            <p class="fragment">Use Promises...</p>
+            <p>
+              <span class="fragment">Use Async/await</span>
+              <span class="fragment">,modularize Code</span>
+              <span class="fragment">,named functions</span>
+              <span class="fragment">or use libraries</span>
+            </p>
+            <p>
+              <span class="fragment">Read more: <a href="http://callbackhell.com">callbackhell.com</a></span>
+            </p>
+            <aside class="notes">
+              This slide has fragments which are also stepped through in the
+              notes window.
+            </aside>
+          </section>
+        </section>
+		<section>
+      <section>
+        <iframe src="https://giphy.com/embed/YGdi7PqUmzFA9MxqE7" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/theboldtype-the-bold-type-boldtype-YGdi7PqUmzFA9MxqE7"></a></p>
+      </section>
+      <section>
+        
+      </section>
+      <section>
+        
+      </section>
+      <section>
+      </section>
+		</section>
+        <!-- Example of nested vertical slides -->
+        <section>
+          <section>
+            <h2>What is a closure?</h2>
+            <p>a closure is created whenever a function is defined inside another function. The inner function has access to the variables and parameters of the outer function, even after the outer function has returned. This allows the inner function to "remember" the state of the outer function and access those variables when it is called later on.</p>
+          </section>
+          <section>
+            <h6 data-id="code-title"></h6>
+              <pre
+                data-id="code-animation"
+              ><code class="hljs javascript" ><script type="text/template">
+              function outer() {
+                const something = "mom!";
+                function inner() {
+                  console.log("Hello, " + something);
+                }
+                return inner;
+              }
+              
+              const sayHello = outer();
+              sayHello(); // logs "Hello, mom!"                    
+            </script></code></pre>
+            </section>
+          <section>
+            <section>
+              <h2 data-id="code-title"></h2>
+                <pre
+                  data-id="code-animation"
+                ><code class="hljs javascript" ><script type="text/template">
+        function createEmployee(name, position, salary) {
+          let totalSalary = salary;
+        
+          function getName() {
+            return name;
+          }
+        
+          function getPosition() {
+            return position;
+          }
+        
+          function getSalary() {
+            return totalSalary;
+          }
+        
+          function raiseSalary(amount) {
+            totalSalary += amount;
+          }
+        
+          return {
+            getName,
+            getPosition,
+            getSalary,
+            raiseSalary
+          };
+        }
+        
+        const employee1 = createEmployee('John', 'Manager', 50000);
+        const employee2 = createEmployee('Jane', 'Developer', 40000);
+        
+        console.log(employee1.getName()); // Output: 'John'
+        console.log(employee2.getName()); // Output: 'Jane'
+                  
+        console.log(employee1.getSalary()); // Output: 50000
+        employee1.raiseSalary(5000);
+        console.log(employee1.getSalary()); // Output: 55000
+              </script></code></pre>
+              </section>
+              <p> demonstrates how closures can be used to create objects with private variables and methods, making it easy to manage data and behavior within a larger application.</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <iframe src="https://giphy.com/embed/QMZpnb79N5BN0wsSM3" width="480" height="396" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/foxsearchlight-super-troopers-jay-chandrasekhar-QMZpnb79N5BN0wsSM3"></a></p>
+          </section>
+          <section>
+            <h4>
+              In JavaScript, this is a special keyword that refers to the current context or object that the code is being executed in.
+  The value of this can change depending on how a function is called or where it is executed. 
+            </h4>
+          </section>
+          <section>
+            <h6 data-id="code-title">When this is used in a function that is called as a method of an object, 
+              this refers to the object itself</h6>
+          <pre
+            data-id="code-animation"
+          ><code class="hljs javascript" ><script type="text/template">
+  const person = {
+    name: 'John',
+    sayName() {
+      console.log(this.name);
+    }
+  };
+  person.sayName(); // Output: 'John'                                 
+        </script></code></pre>
+            </section>
+            <section>
+              <h6 data-id="code-title">When this is used in a standalone function, this refers to the global object, which is the window object in the browser or the global object in Node.js. For example:</h6>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" ><script type="text/template">
+      function logThis() {
+        console.log(this);
+      }
+      
+      logThis(); // Output: window (in the browser) or global (in Node.js)           
+          </script></code></pre>
+              </section>
+              <section>
+                <h6 data-id="code-title">When this is used in an event listener, this refers to the element that the listener is attached to. For example:</h6>
+              <pre
+                data-id="code-animation"
+              ><code class="hljs javascript" ><script type="text/template">
+        <button id="myButton">Click me</button>
+
+    const button = document.getElementById('myButton');
+    button.addEventListener('click', function() {
+      console.log(this); // Output: <button id="myButton">Click me</button>
+    });
+                                                
+            </script></code></pre>
+                </section>
+            
+        </section>
+        <section id="fragments">
+          <h2>What is 'this'?</h2>
+          <p>In the browser's root scope, what is `this`?</p>
+          <p>
+            <span class="fragment">null</span>
+            <br>
+            <span class="fragment">window</span>
+            <br>
+            <span class="fragment">undefined</span>
+          </p>
+          <p>
+            <span class="fragment">Answer: <a href="">window</a></span>
+          </p>
+          <p>
+            <span class="fragment">More: <a href="https://www.youtube.com/watch?v=UHIsnDh6L74&ab_channel=VueMastery">What is `this`?</a></span>
+          </p>
+          <aside class="notes">
+            This slide has fragments which are also stepped through in the
+            notes window.
+          </aside>
+        </section>
+        <section data-visibility="hidden">
+          <h2>Hidden Slides</h2>
+          <p>
+            This slide is visible in the source, but hidden when the
+            presentation is viewed. You can show all hidden slides by setting
+            the `showHiddenSlides` config option to `true`.
+          </p>
+        </section>
+        <section>
+          <section><h2>Prototypal Inheritance</h2></section>
+          <section>
+            <h3> Now don't say "It's JavaScript lol no one knows, it's magic 🧚🏻‍♂️", it's actually because of something called prototypal inheritance.</h3>
+          </section>
+          <section>
+            <h4>
+              In JavaScript, objects can inherit properties and methods from other objects. 
+              This is called prototypal inheritance. 
+              The object that another object inherits from is called its prototype.
+            </h4>
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--pDfw39RK--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/caurw7uuk62htpldgtln.png" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--dWGIZ_zz--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/9howj4i3zvlgun3svppp.gif" alt="">
+          </section>
+          <section>
+            <h4>Why do we have this property object?</h4>
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--O_jSVpBB--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/lyajz4lade30ci2koirq.png" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--cA-2FOVV--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/tt4yfoz8ckmxfofv3f9v.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--zxO-eMV0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/dye57pcku5cfaz0er60c.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--FBGV--dx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/t6kiav029gl2e0hv1xct.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--2026kdwz--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/59nlnyqioosaowj09xn8.gif" alt="">
+          </section>
+          <section>
+            <h5>if it can't find the property we're trying to access, the engine walks down the prototype chain through the __proto__ property!</h5>
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--gg5KU5nB--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/fabyyjot1s78mttyzzk8.gif" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--vJ7k8Gb3--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/8vk5w6loliot818f2lcd.gif" alt="">
+          </section>
+          <section>
+            <h4>Passing an existing object as argument to the Object.create method. </h4>
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--uw9DJFU0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/kbwwsn1fd4gngd05tm9a.png" alt="">
+          </section>
+          <section>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--9sWtvaRG--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/6zzt8zpy85gtitxmpwi9.gif" alt="">
+          </section>
+        </section>
+        <section>
+          <h2>Code this not that javascript</h2>
+        </section>
+        <section>
+          <section data-auto-animate>
+            <h2 data-id="code-title">Console.log</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              const foo    = { name: 'tom',   age: 30, nervous: false };
+              const bar    = { name: 'dick',  age: 40, nervous: false };
+              const baz    = { name: 'harry', age: 50, nervous: true };
+
+              'Bad Code 💩'
+
+              console.log(foo);
+              console.log(bar);
+              console.log(baz);
+            </code></pre>
+          </section>
+        
+          <section data-auto-animate>
+            <h2 data-id="code-title"></h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              'Good Code ✅'
+
+              // Computed Property Names
+
+              console.log('%c My Friends', 'color: orange; font-weight: bold;' )
+              console.log({ foo, bar, baz });
+
+              // Console.table(...)
+              console.table([foo, bar, baz])
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2 data-id="code-title"></h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              // // Console.time
+              console.time('looper')
+              
+              let i = 0;
+              while (i < 1000000) { i ++ }
+              
+              console.timeEnd('looper')
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2 data-id="code-title"></h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              // // Stack Trace Logs
+
+              const deleteMe = () => console.trace('bye bye database')
+
+              deleteMe()
+              deleteMe()
+            </code></pre>
+          </section>
+        </section>
+        <section>
+          <section data-auto-animate>
+            <h2 data-id="code-title">Loop</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              const orders = [500, 30, 99, 15, 223];
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2 data-id="code-title"></h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              'Bad Loop Code 💩'
+
+              const total = 0;
+              const withTax = [];
+              const highValue = [];
+              for (i = 0; i < orders.length; i++) { 
+                  // Reduce
+                  total += orders[i];
+                  // Map
+                  withTax.push(orders[i] * 1.1);
+                  // Filter
+                  if (orders[i] > 100) {
+                      highValue.push(orders[i])
+                  }
+              }
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2 data-id="code-title"></h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              'Good Loop Code ✅'
+
+              // Reduce
+              const total = orders.reduce((acc, cur) => acc + cur)
+
+              // Map
+              const withTax = orders.map(v => v * 1.1)
+
+              // Filter
+              const highValue = orders.filter(v => v > 100);
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2 data-id="code-title"></h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              /**
+            * Every
+            * @returns false
+            */
+            const everyValueGreaterThan50 = orders.every(v => v > 50)
+
+            /**
+            * Every
+            * @returns true
+            */
+            const everyValueGreaterThan10 = orders.every(v => v > 10)
+
+            /**
+            * Some
+            * @returns false
+            */
+            const someValueGreaterThan500 = orders.some(v => v > 500)
+
+            /**
+            * Some
+            * @returns true
+            */
+            const someValueGreaterThan10 = orders.some(v => v > 10)
+            </code></pre>
+          </section>
+        </section>
+        <section>
+          <section data-auto-animate>
+            <h2 data-id="code-title">Template literals</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              const horse = {
+                name: 'Topher 🐴',
+                size: 'large',
+                skills: ['jousting', 'racing'],
+                age: 7
+            }
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2 data-id="code-title"></h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              'Bad String Code 💩'
+  
+            let bio = horse.name + ' is a ' + horse.size + ' horse skilled in ' + horse.skills.join(' & ')
+
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2 data-id="code-title"></h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              'Good String Code ✅'
+
+            const { name, size, skills } = horse;
+            bio = `${name} is a ${size} horse skilled in ${skills.join(' & ')}`
+            console.log(bio);
+
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2 data-id="code-title"></h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              // Advanced Tag Example
+
+            function horseAge(str, age) {
+                
+                const ageStr = age > 5 ? 'old' : 'young';
+                return `${str[0]}${ageStr} at ${age} years`;
+            }
+
+            const bio2 = horseAge`This horse is ${horse.age}`;
+            console.log(bio2)
+
+            </code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section data-auto-animate>
+            <h2 data-id="code-title">Rest params</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              'Bad Function Code 💩'
+
+              function totalHitPoints(a, b, c, d) {
+                  return a + b + c + d;
+              }
+
+              'Good Function Code ✅'
+
+              function totalHitPoints(...hits) {
+                  return hits.reduce((a, b) => a + b);
+              }
+
+              totalHitPoints(1,2,3,4,5,6,7,)
+            </code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section data-auto-animate>
+            <h2 data-id="code-title">Spread syntax</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              // Objects
+
+              const pikachu = { name: 'Pikachu 🐹'  };
+              const stats = { hp: 40, attack: 60, defense: 45 }
+
+              'Bad Object Code 💩'
+
+              pikachu['hp'] = stats.hp
+              pikachu['attack'] = stats.attack
+              pikachu['defense'] = stats.defense
+
+              // OR
+
+              const lvl0 = Object.assign(pikachu, stats)
+              const lvl1 = Object.assign(pikachu, { hp: 45 })
+
+              'Good Object Code ✅'
+
+              const lvl0 = { ...pikachu, ...stats }
+              const lvl1 = { ...pikachu, hp: 45 }
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2 data-id="code-title"></h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              // Arrays
+
+              let pokemon = ['Arbok', 'Raichu', 'Sandshrew'];
+
+              'Bad Array Code 💩'
+
+              pokemon.push('Bulbasaur')
+              pokemon.push('Metapod')
+              pokemon.push('Weedle')
+
+              'Good Array Code ✅'
+
+              // Push 
+              pokemon = [...pokemon, 'Bulbasaur', 'Metapod', 'Weedle']
+
+              // Shift
+
+              pokemon = ['Bulbasaur', ...pokemon, 'Metapod', 'Weedle', ]
+            </code></pre>
+          </section>
+        </section>
+        <section>
+          <section data-auto-animate>
+            <h2 data-id="code-title">Destructuting</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+                const turtle = {
+                  name: 'Bob 🐢',
+                  legs: 4,
+                  shell: true, 
+                  type: 'amphibious',
+                  meal: 10,
+                  diet: 'berries'
+              }
+              
+              'Bad Code 💩'
+              
+              function feed(animal) {
+                  return `Feed ${animal.name} ${animal.meal} kilos of ${animal.diet}`;
+              }
+              
+              
+              'Good Code ✅'
+              
+              function feed({ name, meal, diet }) {
+                  return `Feed ${name} ${meal} kilos of ${diet}`;
+              }
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2 data-id="code-title">Destructuting</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              // OR
+              function feed(animal) {
+                  const { name, meal, diet } = animal;
+                  return `Feed ${name} ${meal} kilos of ${diet}`;
+              }
+              
+              
+              
+              console.log(feed(turtle))
+            </code></pre>
+          </section>
+        </section>
+        <section>
+          <section data-auto-animate>
+            <h2 data-id="code-title">Async await</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+              const random = () => {
+                return Promise.resolve(Math.random())
+            }
+            
+            'Bad Promise Code 💩'
+            
+            const sumRandomAsyncNums = () => {
+                let first;
+                let second;
+                let third;
+            
+                return random()
+                    .then(v => {
+                        first = v;
+                        return random();
+                    })
+                    .then(v => {
+                        second = v;
+                        return random();
+                    })
+                    .then(v => {
+                        third = v;
+                        return first + second + third
+                    })
+                    .then(v => {
+                        console.log(`Result ${v}`)
+                    });
+            }
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2 data-id="code-title">Async await</h2>
+            <pre
+              data-id="code-animation"
+            ><code class="hljs javascript" data-trim data-line-numbers>
+                            'Good Promise Code ✅'
+
+              const sumRandomAsyncNums = async() => {
+
+                  const first = await random();
+                  const second = await random();
+                  const third = await random();
+
+                  console.log(`Result ${first + second + third}`);
+
+                  if (await random()) {
+                      // do something
+                  }
+
+                  const randos = Promise.all([
+                      random(), 
+                      random(),
+                      random()
+                  ])
+
+                  for(const r of await randos) {
+                      console.log(r)
+                  }
+              }
+              sumRandomAsyncNums()
+            </code></pre>
+          </section>
+        </section>
+        
+
+      
+
+        <section style="text-align: left">
+          <h1>THE END</h1>
+            <iframe
+              src="https://giphy.com/embed/CnhXn5Z9OUCYTzBAVr"
+              width="480"
+              height="480"
+              frameborder="0"
+              class="giphy-embed"
+              allowfullscreen
+            ></iframe>
+            <p>
+              <a
+                href="https://giphy.com/gifs/hbo-hbomax-white-lotus-the-CnhXn5Z9OUCYTzBAVr"
+              ></a>
+            </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/copycode/copycode.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <script>
+	  	
+      // Also available as an ES module, see:
+      // https://revealjs.com/initialization/
+      Reveal.initialize({
+		width: 1000,
+  		height: 700,
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+		copycode: {
+		plaintextonly: true,
+		copy: "Copy",
+		copied: "Copied!",
+		timeout: 1000,
+		copybg: "orange",
+		copiedbg: "green",
+		copycolor: "black",
+		copiedcolor: "white",
+		csspath: "",
+		clipboardjspath: ""
+	},
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealZoom,
+          RevealNotes,
+          RevealSearch,
+          RevealMarkdown,
+          RevealHighlight,
+		  CopyCode
+        ],
+      });
+    </script>
+  </body>
 </html>
